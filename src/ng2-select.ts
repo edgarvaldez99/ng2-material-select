@@ -32,6 +32,8 @@ export class Ng2Select extends SelectAccessor {
     @Input() public displayBy = '';
     @Input() public identifyBy = '';
     @Input() public selectedDisplayBy = '';
+    @Input() public disabled: boolean = false;
+
     @Input() public multiple = false;
 
     @Output() public onChange: EventEmitter<string> = new EventEmitter<string>();
